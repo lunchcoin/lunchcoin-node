@@ -1,0 +1,12 @@
+[profile.release]
+panic = 'unwind'
+
+[workspace]
+members = [
+    'node',
+    'pallets/*',
+    'runtime',
+]
+
+[patch.crates-io]
+librocksdb-sys = { git = "https://github.com/hdevalence/rust-rocksdb", branch = "master" }
